@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CERCA</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" id="style-css" href="css/jquery-ui.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="style-css" href="css/screen.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <section class="container" id="top">
+      <section class="main clearfix">
+        <header class="masthead clearfix" id="about" role="banner">
+          <div class="row">
+            <div class="intro">
+              <h1 style="text-align:center">Coming soon</h1>
+            </div>
+            <!--/intro-->
+          </div>
+          <!--/row-->
+        </header>
+      </section>
+      <!--/main-->
+    </section>
+    <!--/container-->
+
+    <!-- <footer role="contentinfo">
+      <section class="row">
+        Footer
+      </section>
+    </footer> -->
+
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=1.7.2"
+    ></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/classie.js"></script>
+    <script>
+      function init() {
+        window.addEventListener('scroll', function(e) {
+          var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = 730,
+            nav = document.querySelector('nav')
+          if (distanceY > shrinkOn) {
+            classie.add(nav, 'with-bg')
+          } else {
+            if (classie.has(nav, 'with-bg')) {
+              classie.remove(nav, 'with-bg')
+            }
+          }
+        })
+      }
+      window.onload = init()
+    </script>
+
+    <script src="js/modernizr.custom.js"></script>
+  </body>
+</html>
