@@ -199,9 +199,12 @@ h5 {
 .title {
   font-weight: 700;
   line-height: 180%;
+  margin-bottom: 4px;
 }
 .outro {
   margin-top: 80px;
+  background: #f5f7fa;
+  padding: 40px;
 }
 @media screen and (max-width: 750px) {
   .outro {
@@ -229,7 +232,8 @@ a:visited {
 }
 a:hover,
 a:active {
-  border-color: #111;
+  border-color: #1da1f2;
+  color: #1da1f2;
 }
 
 @media screen and (max-width: 600px) {
