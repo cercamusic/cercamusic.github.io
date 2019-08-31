@@ -179,7 +179,7 @@ h5 {
 .badge {
   margin: 40px auto;
   display: block;
-  width: 120px;
+  width: 100px;
 }
 @media screen and (max-width: 750px) {
   .badge {
@@ -234,21 +234,12 @@ a,
 a:visited {
   color: #111;
   border-bottom: 1px solid #a6a6a6;
+  font-weight: 700;
 }
 a:hover,
 a:active {
   border-color: #1da1f2;
   color: #1da1f2;
-}
-
-@media screen and (max-width: 600px) {
-  header {
-    padding: 30px 0;
-  }
-}
-header sup a:hover,
-header sup a:active {
-  border: none;
 }
 
 .left {
@@ -265,7 +256,7 @@ nav {
 
 nav li {
   display: inline;
-  margin-left: 9px;
+  margin-left: 5px;
 }
 
 @media screen and (max-width: 750px) {
@@ -274,11 +265,12 @@ nav li {
   }
 }
 
-nav li span {
+nav li span,
+.stream {
   color: #ccc;
 }
 nav li span.sep {
-  padding: 0 0 0 4px;
+  padding: 0 0 0 3px;
 }
 
 footer {
