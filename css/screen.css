@@ -177,7 +177,7 @@ h5 {
   -moz-osx-font-smoothing: grayscale;
 }
 .badge {
-  margin: 40px auto 20px;
+  margin: 40px auto;
   display: block;
   width: 120px;
 }
@@ -196,13 +196,18 @@ h5 {
   display: block;
   width: 60%;
 }
+@media screen and (max-width: 750px) {
+  .cover {
+    width: 100%;
+  }
+}
 .title {
   font-weight: 700;
   line-height: 180%;
   margin-bottom: 4px;
 }
 .outro {
-  margin-top: 80px;
+  margin-top: 40px;
   background: #f5f7fa;
   padding: 40px;
 }
@@ -216,7 +221,7 @@ h5 {
   clear: both;
   margin: 0 auto;
 }
-@media screen and (max-width: 1157px) {
+@media screen and (max-width: 750px) {
   .row {
     padding-left: 25px;
     padding-right: 25px;
@@ -255,13 +260,7 @@ header sup a:active {
 
 nav {
   text-align: center;
-  margin-bottom: 80px;
-}
-
-@media screen and (max-width: 750px) {
-  nav {
-    margin-bottom: 60px;
-  }
+  margin-bottom: 40px;
 }
 
 nav li {
@@ -276,7 +275,7 @@ nav li {
 }
 
 nav li span {
-  color: #7da5cc;
+  color: #ccc;
 }
 nav li span.sep {
   padding: 0 0 0 4px;
