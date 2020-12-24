@@ -94,6 +94,14 @@ blockquote {
   margin-bottom:1rem;
 }
 
+blockquote, .lead {
+  font-family: 'FoundersGrotesk-Semibold',sans-serif
+}
+
+.lead {
+  font-size:1.5rem;
+}
+
 @media screen and (max-width: 600px) {
   blockquote {
     font-size:1.2rem;
@@ -144,7 +152,7 @@ cite {
 .pics {
   float:left;
   width:35%;
-  padding-top:2rem;
+  padding-top:1.8rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -235,7 +243,7 @@ input:hover {
 
 p {
   margin: 24px 0;
-  line-height: 150%;
+  line-height: 145%;
   font-size:20px;
 }
 
