@@ -273,12 +273,18 @@ h5 {
 h1 {
   color:#C11C3E;
   font-size:7rem;
-  margin:1.8rem 0 2rem
+  margin:3.2rem 0 2rem
+}
+
+.lqo {
+  text-indent:-16px;
+  display: inline-block;
 }
 
 @media screen and (max-width: 600px) {
   h1 {
     font-size:4rem;
+    margin-top:4rem;
   }
 }
 
