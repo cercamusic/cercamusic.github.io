@@ -4,6 +4,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
 html,
 body,
 div,
@@ -78,12 +88,91 @@ td {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-sup,
-sub {
-  position: relative;
-  font-size: 60%;
-  padding-left: 1px;
+
+blockquote {
+  font-size:1.8rem;
+  margin-bottom:1rem;
 }
+
+@media screen and (max-width: 600px) {
+  blockquote {
+    font-size:1.2rem;
+  }
+}
+
+.sh {
+  margin-top:3rem;
+}
+
+cite {
+  font-size:20px;
+  font-style: normal;
+}
+
+@media screen and (max-width: 600px) {
+  cite {
+    font-size:16px;
+  }
+}
+
+.contact {
+  text-align: right;
+  font-size:20px;
+  padding-top:2rem;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    font-size:16px;
+    padding:20px 0 0 0;
+  }
+}
+
+.story {
+  clear:both;
+  margin-top:3.2rem;
+  padding-bottom:4rem;
+}
+
+@media screen and (max-width: 600px) {
+  .story {
+    padding-bottom:1.4rem;
+  }
+}
+
+.pics {
+  float:left;
+  width:35%;
+  padding-top:2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .pics {
+    float:none;
+    width:auto;
+    padding-top:1rem;
+  }
+}
+
+.pics img {
+  display: block;
+  margin-bottom: 2rem;
+  border:12px solid #fff;
+}
+
+.text {
+  float:right;
+  width:60%;
+}
+
+@media screen and (max-width: 600px) {
+  .text {
+    float:none;
+    width:auto;
+  }
+}
+
 article,
 aside,
 figure,
@@ -98,45 +187,44 @@ video,
 object {
   display: block;
 }
+.contain {
+  max-width:960px; 
+  margin:0 auto; 
+  padding: 0 20px
+}
+
 body {
-  background: #fcfcfc;
+  background: #ededed;
   color: #111;
-  min-width: 500px;
-  border-top: 3px solid #707e90;
   font-size: 14px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-family: 'FoundersGroteskText-Regular','sans-serif';
 }
-@media screen and (max-width: 740px) {
+
+body,html {
+  width:100%;
+}
+
+@media screen and (max-width: 960px) {
   body {
     min-width: 0;
-    max-width: 740px;
+    max-width: 960px;
   }
-}
-body,
-input,
-textarea,
-select,
-button {
-  font-family: 'Roboto Mono', monospace;
 }
 
 a,
 a:visited {
   color: #111;
-  border-bottom: 1px solid #bfbfbf;
-  font-weight: 700;
   text-decoration: none;
+  border-bottom:1px solid #C11C3E
 }
-a,
-.cover {
-  transition: all 0.2s ease-out;
-}
+
 a:hover,
 a:active {
-  border-color: #1da1f2;
-  color: #1da1f2;
+  color:#C11C3E;
 }
+
 a:hover,
 :focus,
 li:hover,
@@ -144,10 +232,19 @@ img:hover,
 input:hover {
   transition: all 0.2s ease-out;
 }
+
 p {
   margin: 24px 0;
-  line-height: 165%;
+  line-height: 150%;
+  font-size:20px;
 }
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size:16px;
+  }
+}
+
 strong {
   font-weight: 700;
 }
@@ -168,104 +265,35 @@ h5 {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
 }
-.badge {
-  margin: 40px auto;
-  display: block;
-  width: 70px;
+h1 {
+  color:#C11C3E;
+  font-size:7rem;
+  margin-bottom:2.4rem
 }
-@media screen and (max-width: 750px) {
-  .badge {
-    width: 90px;
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size:4rem;
   }
 }
 
-.album {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.cover {
-  margin: 36px auto 6px;
-  display: block;
-  width: 60%;
-  border: 1px solid transparent;
-  padding: 10px;
-}
-.cover:hover {
-  border-color: #bfbfbf;
-}
-@media screen and (max-width: 400px) {
-  .cover {
-    width: 100%;
-  }
-}
-.title {
-  font-weight: 700;
-  line-height: 180%;
-  margin-bottom: 4px;
-}
-.bio .first-letter {
-  font-size: 75px;
-}
-.outro {
-  margin-top: 40px;
-  background: #f5f7fa;
-  padding: 40px;
-}
-@media screen and (max-width: 750px) {
-  .outro {
-    margin-top: 60px;
-  }
-}
-.row {
-  max-width: 500px;
-  clear: both;
-  margin: 0 auto;
-  font-size: 16px;
-}
-@media screen and (max-width: 750px) {
-  .row {
-    padding-left: 25px;
-    padding-right: 25px;
-    max-width: 100%;
-    width: 100%;
-  }
+
+@font-face {
+  font-family: 'FoundersGroteskText-Regular';
+  src: url('fonts/FoundersGroteskText-Regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/FoundersGroteskText-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/FoundersGroteskText-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/FoundersGroteskText-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/FoundersGroteskText-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/FoundersGroteskText-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
-.left {
-  float: left;
-}
-.right {
-  float: right;
-}
-
-nav {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-nav li {
-  display: inline;
-  margin-left: 5px;
-}
-
-@media screen and (max-width: 750px) {
-  nav li {
-    font-size: 10px;
-  }
-}
-
-nav li span,
-.stream {
-  color: #ccc;
-}
-nav li span.sep {
-  padding: 0 0 0 3px;
-}
-.stream {
-  font-size: 12px;
-}
-footer {
-  text-align: center;
-  margin-bottom: 60px;
-  color: #6c6c6c;
+@font-face {
+  font-family: 'FoundersGrotesk-Semibold';
+  src: url('fonts/FoundersGrotesk-Semibold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/FoundersGrotesk-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/FoundersGrotesk-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/FoundersGrotesk-Semibold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/FoundersGrotesk-Semibold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/FoundersGrotesk-Semibold.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
