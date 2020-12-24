@@ -91,10 +91,11 @@ td {
 
 blockquote {
   font-size:1.8rem;
-  margin-bottom:1rem;
+  margin-bottom:0.4rem;
+  line-height: 140%;
 }
 
-blockquote, .lead {
+blockquote, .lead,h1 {
   font-family: 'FoundersGrotesk-Semibold',sans-serif
 }
 
@@ -139,7 +140,7 @@ cite {
 
 .story {
   clear:both;
-  margin-top:3.2rem;
+  margin-top:4rem;
   padding-bottom:4rem;
 }
 
@@ -276,7 +277,7 @@ h5 {
 h1 {
   color:#C11C3E;
   font-size:7rem;
-  margin-bottom:2.4rem
+  margin:1.8rem 0 2rem
 }
 
 @media screen and (max-width: 600px) {
