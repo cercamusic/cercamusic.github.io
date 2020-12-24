@@ -95,20 +95,21 @@ blockquote {
   line-height: 140%;
 }
 
-blockquote, .lead,h1 {
-  font-family: 'FoundersGrotesk-Semibold',sans-serif
-}
 
-.lead {
-  font-size:1.5rem;
+
+blockquote, h2,h1 {
+  font-family: 'FoundersGrotesk-Semibold',sans-serif
 }
 
 @media screen and (max-width: 600px) {
   blockquote {
-    font-size:1.2rem;
+    font-size:20px
   }
 }
-
+h2 {
+  font-size:1.5rem;
+  margin-top:1.8rem;
+}
 .sh {
   margin-top:3.5rem;
 }
@@ -116,12 +117,6 @@ blockquote, .lead,h1 {
 cite {
   font-size:20px;
   font-style: normal;
-}
-
-@media screen and (max-width: 600px) {
-  cite {
-    font-size:16px;
-  }
 }
 
 .contact {
@@ -147,6 +142,7 @@ cite {
 @media screen and (max-width: 600px) {
   .story {
     padding-bottom:1.4rem;
+    margin-top:2rem;
   }
 }
 
@@ -249,8 +245,8 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  p {
-    font-size:16px;
+  p, h2, cite {
+    font-size:20px;
   }
 }
 
@@ -286,6 +282,10 @@ h1 {
   }
 }
 
+footer {
+  margin-top:3rem;
+  font-size:14px;
+}
 
 @font-face {
   font-family: 'FoundersGroteskText-Regular';
