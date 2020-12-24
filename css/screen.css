@@ -197,7 +197,7 @@ object {
   display: block;
 }
 .contain {
-  max-width:960px; 
+  max-width:900px; 
   margin:0 auto; 
   padding: 0 20px
 }
@@ -215,10 +215,10 @@ body,html {
   width:100%;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 900px) {
   body {
     min-width: 0;
-    max-width: 960px;
+    max-width: 900px;
   }
 }
 
