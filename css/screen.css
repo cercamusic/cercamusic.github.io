@@ -280,18 +280,12 @@ h1 {
 
 @font-face {
   font-family: 'FoundersGroteskText-Regular';
-  src: url('../fonts/FoundersGroteskText-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/FoundersGroteskText-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/FoundersGroteskText-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/FoundersGroteskText-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/FoundersGroteskText-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('../fonts/FoundersGroteskText-Regular.eot'); 
+  src: url('../fonts/FoundersGroteskText-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'FoundersGrotesk-Semibold';
-  src: url('../fonts/FoundersGrotesk-Semibold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/FoundersGrotesk-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/FoundersGrotesk-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/FoundersGrotesk-Semibold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/FoundersGrotesk-Semibold.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('../fonts/FoundersGrotesk-Semibold.eot'); 
+  src: url('../fonts/FoundersGrotesk-Semibold.woff') format('woff');
 }
