@@ -121,9 +121,14 @@ cite {
 
 .contact {
   text-align: right;
-  font-size:20px;
-  padding-top:2rem;
+  font-size:16px;
   line-height: 140%;
+  padding:32px 32px 0 0;
+}
+
+.contact a {
+  display: inline-block;
+  margin-left:16px;
 }
 
 @media screen and (max-width: 600px) {
@@ -193,7 +198,7 @@ object {
   display: block;
 }
 .contain {
-  max-width:900px; 
+  max-width:860px; 
   margin:0 auto; 
   padding: 0 20px
 }
@@ -211,10 +216,10 @@ body,html {
   width:100%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 860px) {
   body {
     min-width: 0;
-    max-width: 900px;
+    max-width: 860px;
   }
 }
 
@@ -236,6 +241,19 @@ li:hover,
 img:hover,
 input:hover {
   transition: all 0.2s ease-out;
+}
+
+.sym {
+  display: block;
+  width: 120px;
+  opacity: .9;
+  margin-left: -23px;
+}
+
+@media screen and (max-width: 600px) {
+  .sym {
+    margin-left:0;
+  }
 }
 
 p {
@@ -273,7 +291,7 @@ h5 {
 h1 {
   color:#C11C3E;
   font-size:7rem;
-  margin:3.2rem 0 2rem
+  margin:-6.4rem 0 2rem
 }
 
 .lqo {
@@ -291,7 +309,7 @@ h1 {
 @media screen and (max-width: 600px) {
   h1 {
     font-size:4rem;
-    margin-top:4rem;
+    margin-top:2rem;
   }
 }
 
