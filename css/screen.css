@@ -108,7 +108,7 @@ blockquote, h2,h1 {
 }
 h2 {
   font-size:1.5rem;
-  margin-top:1.8rem;
+  margin-top:2.8rem;
 }
 .sh {
   margin-top:3.5rem;
@@ -245,7 +245,7 @@ input:hover {
 
 .sym {
   display: block;
-  width: 120px;
+  width: 100px;
   margin-left: -23px;
 }
 
