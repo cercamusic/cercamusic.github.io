@@ -109,6 +109,7 @@ blockquote, h2,h1 {
 h2 {
   font-size:1.5rem;
   margin-top:2.8rem;
+  line-height: 1.4;
 }
 .sh {
   margin-top:3.5rem;
@@ -197,6 +198,7 @@ video,
 object {
   display: block;
 }
+
 .contain {
   max-width:860px; 
   margin:0 auto; 
